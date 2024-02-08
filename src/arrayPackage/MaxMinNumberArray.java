@@ -1,6 +1,6 @@
-package arraySort;
+package arrayPackage;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class MaxMinNumberArray {
@@ -25,6 +25,5 @@ public class MaxMinNumberArray {
 				min=arr[i];
 		}
 		System.out.println("Maximum number is:"+ " "+max + " and the minimum number is "+min);
-	}
+	}}
 
-}
