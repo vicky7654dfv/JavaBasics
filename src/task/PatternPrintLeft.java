@@ -15,7 +15,7 @@ public class PatternPrintLeft {
 					System.out.print("*");
 				}
 			}
-			System.out.println("");
+			System.out.println();
 		}
 	}
 

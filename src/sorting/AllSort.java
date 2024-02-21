@@ -61,7 +61,7 @@ public class AllSort {
 	
 	public static int[] insertionSort(int arr[])
 	{
-		for(int i=0;i<arr.length;i++)
+		for(int i=1;i<arr.length;i++)
 		{
 			int currentVal= arr[i];
 		    int j=i-1;
@@ -69,8 +69,8 @@ public class AllSort {
 		    {
 		    	arr[j+1]=arr[j];
 		    	j--;
-		    }
+		    } 
 		}
-		return arr;
+		return arr;   
 	}
 }

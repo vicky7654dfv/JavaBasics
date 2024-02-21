@@ -6,8 +6,9 @@ public class DescendingOrder {
 		int arr[]= {7,21,8,9,16,23};
 		int i=0,j=i+1;
 		
-		for(int i=0;i<sub(arr).length;i++)
-		System.out.println(sub(arr,i,j));
+		int[] arr2=sub(arr,i,j);
+		for(int k=0;k<arr2.length;k++)
+		System.out.println(arr2[k]);
 		
 	}
 	public static int[] sub(int[] arr,int i,int j)
