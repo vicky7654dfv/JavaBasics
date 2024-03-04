@@ -3,7 +3,8 @@ package sorting;
 public class AllSort {
 
 	public static void main(String[] args) {
-		int[] arr= {21,9,16,18,17,2};
+		int[] arr= {21,9,16,23,2,18,17,2};
+		int a=0,b=0;
 		
 		System.out.println("***********Bubble sort***********");
 		int[] arr1=bubbleSort(arr);
@@ -18,9 +19,12 @@ public class AllSort {
 		
 		
 		System.out.println("***************Insertion sort**************");
-		int[] arr3=selectionSort(arr);
+		int[] arr3=insertionSort(arr);
 		for(int i=0;i<arr3.length;i++)
 			System.out.println(arr3[i]);
+		
+		System.out.println("***************Merge sort**************");
+		mergeSort(arr,0,arr.length-1);
 		
 	}
 	public static int[] bubbleSort(int[] arr)
@@ -70,7 +74,24 @@ public class AllSort {
 		    	arr[j+1]=arr[j];
 		    	j--;
 		    } 
+	    	arr[j+1]=currentVal;
+
 		}
 		return arr;   
 	}
+	public static int[] mergeSort(int[] arr,int left,int right)
+	{
+	        if(left <right) 
+	        {
+	            int mid =(right+left)/2;
+	            
+	            
+	           int[] rightFinal= mergeSort(arr,mid+1,right);
+	           int[] leftFinal= mergeSort(arr,left,mid);
+	           
+	           System.out.println("Method return "+left+":"+right);
+	        }
+
+	        return arr;
+   }
 }

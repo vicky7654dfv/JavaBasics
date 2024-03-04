@@ -71,7 +71,6 @@ public class MainSearch {
     			return recursiveBinarySearch(array,find,mid);
     		}
     	}
-    	return -1;
     }
 
 }
