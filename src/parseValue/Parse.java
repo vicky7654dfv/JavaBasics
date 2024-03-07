@@ -3,7 +3,7 @@ package parseValue;
 public class Parse {
 
 	public static void main(String[] args) {
-		Integer age =new Integer(39);
+		Integer age =new Integer("39");
 		Integer age1=99;
 		String pincode="625526";
 		Integer pin=Integer.parseInt(pincode);

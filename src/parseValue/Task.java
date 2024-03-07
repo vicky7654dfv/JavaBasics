@@ -15,15 +15,15 @@ public class Task {
      //   prime(arr,x);
         
         System.out.println(Math.sqrt(121) +":"+ Math.sqrt(64));
-        System.out.println(Math.sqrt());
-        Math.
+   //     System.out.println(Math.sqrt());
+ //       Math.
 
 	}
    public static int[] prime(int[] arr,int x)
    {
 	   if(x<arr.length)
 	   {
-		   if(arr[i]==)
+//		   if(arr[i]==)
 		   {
 			 
 		   }
