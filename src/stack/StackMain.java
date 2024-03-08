@@ -11,7 +11,7 @@ public class StackMain {
 		ob1.print();
 		ob1.pop();
 		ob1.print();
-		System.out.println(ob1.size);
+		System.out.println(ob1.length);
 	}
 
 }

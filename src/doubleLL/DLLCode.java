@@ -18,8 +18,8 @@ public class DLLCode {
 		}
 		else
 		{
-			node.prev=tail;
-			tail.next=node;
+			node.setPrev(tail);
+			tail.setNext(node);
 			tail=node;
 		}
 	}

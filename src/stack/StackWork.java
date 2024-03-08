@@ -1,28 +1,29 @@
 package stack;
 
 import queue.QueueNode;
+import stackWith.StackNode;
 
 public class StackWork {
 	StackNode head=null;
 	StackNode tail=null;
-	int size=0;
+	int length=0;
 	
 	public void push(int value)
 	{
-		size++;
-		StackNode ob=new StackNode();
-		ob.setValue(value);
+		StackNode ob2=new StackNode();
+		ob2.setValue(value);
 		
 		if(head==null)
 		{
-			head=ob;
-			tail=ob;
+			head=ob2;
+			tail=ob2;
 		}
 		else
 		{
-			tail.setNext(ob);
-			tail=ob;
+			tail.setNext(ob2);
+			tail=ob2;
 		}
+		length++;
 	}
 	public void print()
 	{
@@ -40,19 +41,27 @@ public class StackWork {
 	}
 	public void pop()
 	{
-		StackNode currentValue=head;
-		if(currentValue==null)
-			System.out.println("Stack is empty");
-		while(currentValue.next!=null) {
-		if(currentValue.next!=null) 
+		if(head == tail)
 		{
-			currentValue=currentValue.getNext();
+			head=null;
+			tail=null;
+			length=0;
 		}
-		
-		}
-		if(currentValue.next==null)
+		else if(head!= null)
 		{
-			currentValue=currentValue.getNext();
+			StackNode current = head;
+			while(current!=null)
+			{
+				if(current.next==tail)
+				{
+					current.next=null;
+					tail=current;
+					length--;
+					break;
+				}
+				current=current.next;
+			}
+			
 		}
 	}
 }

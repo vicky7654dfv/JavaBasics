@@ -4,7 +4,7 @@ import circularLinkedList.CircularLLNode;
 
 public class CircularDLLNode {
 	int value;
-	CircularLLNode next=null;
+	CircularDLLNode next=null;
 	
 	public int getValue() {
 	return value;
@@ -13,10 +13,10 @@ public class CircularDLLNode {
 	{
 		this.value=value;
 	}
-	public CircularLLNode getNext() {
+	public CircularDLLNode getNext() {
 		return next;
 	}
-	public void setNext(CircularLLNode next) {
+	public void setNext(CircularDLLNode next) {
 		this.next=next;
 	}
 

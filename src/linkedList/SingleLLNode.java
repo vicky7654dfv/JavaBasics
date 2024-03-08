@@ -4,7 +4,7 @@ public class SingleLLNode {
 
 		// TODO Auto-generated method stub
 		private int value;
-		private SingleLLNode next=null;
+		private SingleLLNode next;
 		
 		public SingleLLNode getNext() {
 			return next;

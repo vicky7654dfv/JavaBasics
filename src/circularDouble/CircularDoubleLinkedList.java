@@ -3,12 +3,12 @@ package circularDouble;
 import circularLinkedList.CircularLLNode;
 
 public class CircularDoubleLinkedList {
-	CircularLLNode head=null;
-	CircularLLNode tail=null;
+	CircularDLLNode head=null;
+	CircularDLLNode tail=null;
 	
 	public void insert(int value) {
-		CircularDLLNode circularLLNode=new CircularDLLNode();
-		circularLLNode.setValue(value);
+		CircularDLLNode circularDLLNode=new CircularDLLNode();
+		circularDLLNode.setValue(value);
 		
 		if(head==null)
 		{
