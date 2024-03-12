@@ -8,7 +8,7 @@ public class DLLSortNode<T> {
         this.value = data;
     }
 
-    public void setData(T data) {
+    public void setValue(T data) {
         this.value = data;
     }
 
@@ -20,7 +20,7 @@ public class DLLSortNode<T> {
         this.next = next;
     }
 
-    public T getData() {
+    public T getValue() {
         return value;
     }
 

@@ -4,17 +4,19 @@ public class DLLSortMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        DLLSort<Integer> table = new DLLSort<Integer>();
+        DLLSort<Integer> ob = new DLLSort<Integer>();
         System.out.println("Before sort");
-        table.insert(44);
-        table.insert(22);
-        table.insert(11);
-        table.insert(99);
-        table.insert(66);
-        table.insert(33);
-        table.display();
-        table.sort();
+        ob.insert(44);
+        ob.insert(22);
+        ob.insert(11);
+        ob.insert(99);
+        ob.insert(66);
+        ob.insert(33);
+        ob.print();
+        ob.sort();
         System.out.println("After sort");
-        table.display();
+        ob.print();
+        System.out.println("Reverse");
+        ob.reverse();
 	}
 }

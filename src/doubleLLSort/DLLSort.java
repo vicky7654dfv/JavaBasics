@@ -17,17 +17,23 @@ public class DLLSort<T> {
         }
     }
 
-    public void sort() {
+    public void sort() 
+    {
         DLLSortNode<T> current = null, nextCurrent = null;
         T temp;
 
-        if (head == null) {
-            return;
-        } else {
-            for (current = head; current.getNext() != null; current = current.getNext()) {
-                for (nextCurrent = current.getNext(); nextCurrent != null; nextCurrent = nextCurrent.getNext()) {
-                    if ((int)current.getData() > (int)nextCurrent.getData()) {
-                        temp = current.value;
+        if (head == null) 
+        {
+            System.out.println("Empty");
+        } else 
+         {
+            for (current = head; current.getNext() != null; current = current.getNext()) 
+            {
+                for (nextCurrent = current.getNext(); nextCurrent != null; nextCurrent = nextCurrent.getNext())
+                {
+                    if ((int)current.getValue() > (int)nextCurrent.getValue())
+                    {
+                        temp = current.getValue();
                         current.value = nextCurrent.value;
                         nextCurrent.value = temp;
                     }
@@ -36,25 +42,25 @@ public class DLLSort<T> {
         }
     }
 
-    public void display() {
+    public void print() {
         DLLSortNode<T> current = head;
 
         if (head == null) {
             System.out.println("list is empty");
         } else {
             while(current != null) {
-                System.out.println(current.getData());
+                System.out.println(current.getValue());
                 current = current.getNext();
             }
         }
 
     }
 
-    public void displayReverse() {
+    public void reverse() {
         DLLSortNode<T> current = tail;
 
         while(current != null) {
-            System.out.println(current.getData());
+            System.out.println(current.getValue());
             current = current.getPrev();
         }
     }
