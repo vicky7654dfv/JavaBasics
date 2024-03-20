@@ -4,23 +4,30 @@ public class Task {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		method(i,j,n);
 		int i=0;
 		int j=0;
 		int n=5;
-		while(i<n)
+
+	}
+	public String method(int i, int j,int n)
+	{
+		if(i<n)
 		{
-			while(j<n) {
+			if(j<n) {
 			if((i==j && i<=n/2) || (i+j==n-1 && i<=n/2) || (j==n/2 && i>=n/2))
-				System.out.print("* ");
+				return method(++j;);
 			else
-				System.out.print("  ");
+				
 			j++;
 			}
 			j=0;
 			System.out.println("  ");
 		i++;
 		}
+		return null;
 
+		
 	}
 
 }
