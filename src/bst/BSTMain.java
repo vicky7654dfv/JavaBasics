@@ -16,8 +16,8 @@ public class BSTMain {
 		ob.insert(20);
 		ob.insert(10);
 		
-		System.out.println(ob.find(23));
-		System.out.println(ob.find(6));
+		ob.find(23);
+		ob.find(6);
 
 	}
 
