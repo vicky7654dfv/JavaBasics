@@ -12,7 +12,7 @@ public class StlMap {
 		map.put("gender", "male");
 		
 		System.out.println(map.get("name"));
-		System.out.println(map.get("gg"));
+		System.out.println(map.get("age"));
 		System.out.println(map.get("gender"));
 		
 		Map<String, Integer> map1 = new HashMap<String, Integer>();
