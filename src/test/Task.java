@@ -6,17 +6,17 @@ public class Task {
 
 	public static void main(String[] args) {
 //	palindrome();
-//	ternarySearch();
+	ternarySearch();
 	Scanner s=new Scanner(System.in);
 	System.out.println("Enter number of rotation:");
 	int rot=s.nextInt();
-	cylinder(rot);
+//	cylinder(rot);
 	System.out.println();
 	System.out.println();
-	cylinder1(rot);
+//	cylinder1(rot);
 	System.out.println();
 	System.out.println();
-	cylinder2(rot);
+	//cylinder2(rot);
 	}
 	public static void palindrome() {
 		String name= "vignesh";
@@ -45,8 +45,8 @@ public class Task {
 		int find=88;
 		
 		while(left<right) {
-			int mid1= (left+(right-left)/3);
-			int mid2= (right-(right-left)/3);
+			int mid1= left+(right-left)/3;
+			int mid2= right-(right-left)/3;
 			
 			if(find==arr[mid1]) {
 				System.out.println(mid1);

@@ -5,10 +5,10 @@ public class MainSearch {
     public static void main(String[] args) {
         int[] array = {3, 5, 6, 7, 8, 9};
         int find = 7;
-        int mid=0;
+     	int left=0,right=array.length-1;
         print("linear", linearSearch(array, find), find);        
         print("binary", binarySearch(array, find), find);        
-        recursiveBinarySearch(array,find,mid);
+        recursiveBinarySearch(array,find,left,right);
 
     }
 
@@ -51,26 +51,25 @@ public class MainSearch {
         return -1;
     }
     
-    public static int recursiveBinarySearch(int[] array,int find,int mid) {
-    	int left=0,right=array.length-1;
-    	if(left<=right)
-    		mid = (left+right)/2;
-    	{
+    public static int recursiveBinarySearch(int[] array,int find,int left, int right) {
+   
+    	if(left<=right) {
+    		int mid = (left+right)/2;
+    	
     		if(mid==find)
     		{
     			return mid;
     		}
     		else if(mid<find)
     		{
-    			left=mid+1;
-    			return recursiveBinarySearch(array,find,mid);
+    			return recursiveBinarySearch(array,find,mid+1,right);
     		}
     		else
     		{
-    			right=mid-1;
-    			return recursiveBinarySearch(array,find,mid);
+    			return recursiveBinarySearch(array,find,left,mid-1);
     		}
     	}
+		return -1;
     }
 
 }

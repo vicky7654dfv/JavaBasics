@@ -4,7 +4,7 @@ public class TwoBox {
 
 	public static void main(String[] args) {
 		int i=0,j=0;
-		int[] arr=new int[10];
+		int[] arr=new int[11];
 		int[] save=box(arr,i,j);
 	}
 	public static int[] box(int[] arr,int i,int j)
